@@ -1,0 +1,24 @@
+{
+  "name": "create-simplybuilder",
+  "version": "0.0.1",
+  "description": "SimplyBuilder Create Starter",
+  "author": "Jamil Serviços <jamilservicos@gmail.com> (https://github.com/jamilservicos)",
+  "bin": {
+    "create-simplybuilder": "index.js",
+    "cva": "index.js"
+  },
+  "license": "MIT",
+  "scripts": {
+    "run:test": ".bin/index.js"
+  },
+  "files": [
+    "index.js",
+    "template-*"
+  ],
+  "devDependencies": {
+    "cross-spawn": "latest",
+    "kolorist": "latest",
+    "minimist": "latest",
+    "prompts": "latest"
+  }
+}
