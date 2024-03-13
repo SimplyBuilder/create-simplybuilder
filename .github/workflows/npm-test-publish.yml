@@ -26,7 +26,6 @@ jobs:
         with:
           node-version: '20.10.x'
           registry-url: 'https://registry.npmjs.org'
-          scope: '@jamilservices'
           persist-credentials: false
       - name: Install pnpm
         uses: pnpm/action-setup@v3
