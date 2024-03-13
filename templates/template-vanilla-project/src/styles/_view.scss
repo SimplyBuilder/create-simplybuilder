@@ -1,0 +1,29 @@
+@use "@styles/function/convert";
+
+$set-h2-size: convert.px-to-rem(40px);
+$set-h4-size: convert.px-to-rem(20px);
+
+body {
+  min-width: 100%;
+  min-height: 100%;
+  user-select: none;
+}
+
+.view-container {
+  display: flex;
+  font-family: inherit;
+  flex-direction: column;
+  width: inherit;
+  height: inherit;
+  max-height: inherit;
+  max-width: inherit;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  h2 {
+    font-size: $set-h2-size;
+  }
+  h4 {
+    font-size: $set-h4-size;
+  }
+}
