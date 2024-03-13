@@ -22,6 +22,7 @@
     "clean": "rm -rf lib && rm -rf build",
     "build": "pnpm run clean && rollup -c",
     "see-pack": "tar tvf $(npm pack)",
+    "prepublish": "pnpm build",
     "version:patch": "pnpx changelogen@latest --bump --patch",
     "version:minor": "pnpx changelogen@latest --bump --minor",
     "version:major": "pnpx changelogen@latest --bump --major"
