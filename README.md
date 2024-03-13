@@ -11,3 +11,5 @@ pnpx create-simplybuilder
 ~~~bash
 npx create-simplybuilder
 ~~~
+
+![](https://github.com/SimplyBuilder/create-simplybuilder/demonstration.gif)
