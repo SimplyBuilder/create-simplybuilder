@@ -1,0 +1,19 @@
+{
+  "name": "sb-starter",
+  "version": "0.0.0",
+  "description": "SimplyBuilder - Starter Template",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@jamilservices/sb-core-module": "latest",
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "sass": "latest",
+    "vite": "latest"
+  }
+}
