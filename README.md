@@ -12,4 +12,4 @@ pnpx create-simplybuilder
 npx create-simplybuilder
 ~~~
 
-![](https://github.com/SimplyBuilder/create-simplybuilder/demonstration.gif)
+![](https://github.com/SimplyBuilder/create-simplybuilder/blob/main/demonstration.gif)
