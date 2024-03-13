@@ -3,22 +3,43 @@
   "version": "0.0.1",
   "description": "SimplyBuilder Create Starter",
   "author": "Jamil Serviços <jamilservicos@gmail.com> (https://github.com/jamilservicos)",
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/jamilservicos"
+    },
+    {
+      "type": "patreon",
+      "url": "https://patreon.com/jamilservices"
+    }
+  ],
   "bin": {
     "create-simplybuilder": "index.js",
     "cva": "index.js"
   },
   "license": "MIT",
   "scripts": {
-    "run:test": ".bin/index.js"
+    "clean": "rm -rf lib && rm -rf build",
+    "build": "pnpm run clean && rollup -c",
+    "see-pack": "tar tvf $(npm pack)",
+    "version:patch": "pnpx changelogen@latest --bump --patch",
+    "version:minor": "pnpx changelogen@latest --bump --minor",
+    "version:major": "pnpx changelogen@latest --bump --major"
   },
   "files": [
+    "AUTHORS",
     "index.js",
-    "template-*"
+    "lib/main.min.js",
+    "templates"
   ],
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
     "cross-spawn": "latest",
     "kolorist": "latest",
     "minimist": "latest",
-    "prompts": "latest"
+    "prompts": "latest",
+    "rollup": "^4.13.0"
   }
 }
