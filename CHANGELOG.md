@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.0.1
+
+[compare changes](https://create-simplybuilder.github.com/SimplyBuilder/create-simplybuilder/compare/v1.0.0...v1.0.1)
+
+### 🚀 Enhancements
+
+- Add publish script in package.json file (4c20824)
+
+### ❤️ Contributors
+
+- JamilServices <jamilservicos@gmail.com>
+
 ## v1.0.0
 
 [compare changes](https://create-simplybuilder.github.com/SimplyBuilder/create-simplybuilder/compare/empty...v1.0.0)
