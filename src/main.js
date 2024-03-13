@@ -243,7 +243,7 @@ const init = async () => {
     }
 
     console.log(`\nScaffolding project in ${root}...`);
-    const templateDir = path.resolve(__dirname, "..", `template-${template}`);
+    const templateDir = path.resolve(__dirname, "..", "templates", `template-${template}`);
     const write = (file, content) => {
         const targetPath = path.join(root, renameFiles[file] ?? file);
         if (content) {
