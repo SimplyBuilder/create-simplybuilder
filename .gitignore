@@ -3,13 +3,14 @@
 !.gitignore
 !.npmignore
 
-!template-*/
-!template-*/**
+!templates
+!templates/**
 !src/
 !src/main.js
 
 !index.js
 !package.json
+!rollup.config.js
 !README.md
 
 !package-lock.json
