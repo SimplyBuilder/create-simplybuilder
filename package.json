@@ -23,6 +23,7 @@
     "build": "pnpm run clean && rollup -c",
     "see-pack": "tar tvf $(npm pack)",
     "prepublish": "pnpm build",
+    "publish": "pnpm publish --no-git-checks --access public",
     "publish:test": "pnpm publish --dry-run --no-git-checks",
     "version:patch": "pnpx changelogen@latest --bump --patch",
     "version:minor": "pnpx changelogen@latest --bump --minor",
