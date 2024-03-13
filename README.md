@@ -11,5 +11,8 @@ pnpx create-simplybuilder
 ~~~bash
 npx create-simplybuilder
 ~~~
+~~~bash
+yarn create simplybuilder
+~~~
 
 ![](https://github.com/SimplyBuilder/create-simplybuilder/blob/main/demonstration.gif)
