@@ -27,6 +27,8 @@
 !LICENSE
 !CHANGELOG.md
 
+!demonstration.gif
+
 **/*~
 **/*.log
 **/.DS_Store
