@@ -1,0 +1,41 @@
+# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
+# For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
+
+name: Test Node.js Package
+
+on:
+  workflow_dispatch:
+    branches:
+      - main
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    if: github.repository == 'SimplyBuilder/create-simplybuilder'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js 20.10.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.10.x'
+          registry-url: 'https://registry.npmjs.org'
+          scope: '@jamilservices'
+          persist-credentials: false
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8.15.4
+          run_install: false
+      - name: Install dependencies
+        run: pnpm install
+      - name: Publish Packages
+        run: pnpm run publish:test
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
