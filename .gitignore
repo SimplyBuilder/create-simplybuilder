@@ -3,6 +3,9 @@
 !.gitignore
 !.npmignore
 
+!.github
+!.github/**
+
 !templates
 !templates/**
 !src/
