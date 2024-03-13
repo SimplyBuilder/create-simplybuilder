@@ -1,6 +1,6 @@
 {
   "name": "create-simplybuilder",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "SimplyBuilder Create Starter",
   "author": "Jamil Serviços <jamilservicos@gmail.com> (https://github.com/jamilservicos)",
   "funding": [
@@ -23,7 +23,7 @@
     "build": "pnpm run clean && rollup -c",
     "see-pack": "tar tvf $(npm pack)",
     "prepublish": "pnpm build",
-    "publish": "pnpm publish --no-git-checks --access public",
+    "publish:dist": "pnpm publish --no-git-checks --access public",
     "publish:test": "pnpm publish --dry-run --no-git-checks",
     "version:patch": "pnpx changelogen@latest --bump --patch",
     "version:minor": "pnpx changelogen@latest --bump --minor",
