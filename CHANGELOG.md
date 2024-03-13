@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.0.2
+
+[compare changes](https://create-simplybuilder.github.com/SimplyBuilder/create-simplybuilder/compare/v1.0.1...v1.0.2)
+
+### 📦 Build
+
+- Update npm publish script to use publish:dist command (3663494)
+
+### ❤️ Contributors
+
+- JamilServices <jamilservicos@gmail.com>
+
 ## v1.0.1
 
 [compare changes](https://create-simplybuilder.github.com/SimplyBuilder/create-simplybuilder/compare/v1.0.0...v1.0.1)
