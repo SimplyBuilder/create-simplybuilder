@@ -1,7 +1,5 @@
 'use strict';
 
-'use strict';
-
 import {CoreModule} from "@jamilservices/sb-core-module";
 import "@styles/main.scss";
 import helloWordExample from "@components/hello-world/main.js";

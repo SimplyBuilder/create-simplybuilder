@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.0.3
+
+[compare changes](https://create-simplybuilder.github.com/SimplyBuilder/create-simplybuilder/compare/v1.0.2...v1.0.3)
+
+### 🩹 Fixes
+
+- Update image link in README (fb41851)
+
+### ❤️ Contributors
+
+- JamilServices <jamilservicos@gmail.com>
+
 ## v1.0.2
 
 [compare changes](https://create-simplybuilder.github.com/SimplyBuilder/create-simplybuilder/compare/v1.0.1...v1.0.2)
