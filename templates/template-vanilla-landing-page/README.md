@@ -1,4 +1,4 @@
-## Starter Project    
+## Starter Project by [SimplyBuilder](https://github.com/SimplyBuilder/create-simplybuilder)    
 
 #### The project is using vite.js as a test server, and you can also generate a build with it if you wish.
 
