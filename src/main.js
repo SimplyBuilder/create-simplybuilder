@@ -6,7 +6,7 @@ const { fileURLToPath } = require("node:url");
 const spawn = require("cross-spawn");
 const minimist = require("minimist");
 const prompts = require("prompts");
-const {red, reset, yellow, blue} = require ("kolorist");
+const {red, reset, yellow, blue, green} = require("kolorist");
 
 // Avoids autoconversion to number of the project name by defining that the args
 // non-associated with an option ( _ ) needs to be parsed as a string. See #4606
@@ -27,7 +27,7 @@ const TEMPLATES_MODELS = [
             {
                 name: "vanilla-spa",
                 display: "Single-Page Application",
-                color: blue
+                color: green
             }
         ]
     }
