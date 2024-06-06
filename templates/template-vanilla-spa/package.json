@@ -1,0 +1,22 @@
+{
+  "name": "sb-starter",
+  "version": "0.0.0",
+  "description": "SimplyBuilder - SPA Starter Template",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@jamilservices/sb-core-module": "latest",
+    "@jamilservices/sb-module-notify": "latest",
+    "@jamilservices/sb-module-router": "latest",
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "sass": "latest",
+    "terser": "latest",
+    "vite": "latest"
+  }
+}
