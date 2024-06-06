@@ -16,10 +16,6 @@
 !rollup.config.js
 !README.md
 
-!package-lock.json
-!yarn.lock
-!pnpm-lock.yaml
-
 !AUTHORS
 !CONTRIBUTING.md
 !GOVERNANCE.md
@@ -36,3 +32,7 @@
 **/node_modules
 **/dist
 **/build
+
+**/package-lock.json
+**/yarn.lock
+**/!pnpm-lock.yaml
