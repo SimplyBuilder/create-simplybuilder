@@ -6,28 +6,33 @@ const { fileURLToPath } = require("node:url");
 const spawn = require("cross-spawn");
 const minimist = require("minimist");
 const prompts = require("prompts");
-const {red, reset, yellow} = require ("kolorist");
+const {red, reset, yellow, blue} = require ("kolorist");
 
 // Avoids autoconversion to number of the project name by defining that the args
 // non-associated with an option ( _ ) needs to be parsed as a string. See #4606
 const argv = minimist(process.argv.slice(2), { string: ["_"] });
 const cwd = process.cwd();
 
-const FRAMEWORKS = [
+const TEMPLATES_MODELS = [
     {
-        name: "vanilla-project",
+        name: "vanilla-project-landing-page",
         display: "Project Starter",
         color: yellow,
         variants: [
             {
-                name: "vanilla-project",
-                display: "JavaScript",
+                name: "vanilla-landing-page",
+                display: "Landing Page",
                 color: yellow
+            },
+            {
+                name: "vanilla-spa",
+                display: "Single-Page Application",
+                color: blue
             }
         ]
     }
 ];
-const TEMPLATES = FRAMEWORKS.map(f => (f.variants?.map(v => v.name)) || [f.name]).reduce((a, b) => a.concat(b), []);
+const TEMPLATES = TEMPLATES_MODELS.map(f => (f.variants?.map(v => v.name)) || [f.name]).reduce((a, b) => a.concat(b), []);
 const renameFiles = {
     _gitignore: ".gitignore"
 };
@@ -177,7 +182,7 @@ const init = async () => {
                         ? reset(`"${argTemplate}" isn't a valid template. Please choose from below: `)
                         : reset("Select a framework:"),
                 initial: 0,
-                choices: FRAMEWORKS.map(framework => {
+                choices: TEMPLATES_MODELS.map(framework => {
                     const frameworkColor = framework.color;
                     return {title: frameworkColor(framework.display || framework.name), value: framework};
                 })
@@ -213,7 +218,7 @@ const init = async () => {
     const pkgManager = pkgInfo ? pkgInfo.name : "npm";
     const isYarn1 = pkgManager === "yarn" && pkgInfo?.version.startsWith("1.");
 
-    const {customCommand} = FRAMEWORKS.flatMap(f => f.variants).find(v => v.name === template) ?? {};
+    const {customCommand} = TEMPLATES_MODELS.flatMap(f => f.variants).find(v => v.name === template) ?? {};
 
     if (customCommand) {
         const fullCustomCommand = customCommand
