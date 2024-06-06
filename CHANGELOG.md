@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v1.0.4
+
+[compare changes](https://create-simplybuilder.github.com/SimplyBuilder/create-simplybuilder/compare/v1.0.3...v1.0.4)
+
+### 🚀 Enhancements
+
+- **README:** Add hyperlink to SimplyBuilder project in README (c8d7010)
+- **vanilla-landing-page:** Update starter project link (85824aa)
+- **vite:** Add configuration for Vite in vanilla SPA template (4098172)
+- Add open_collective to supported funding model platforms (6166d89)
+- **gitignore:** Update .gitignore file to include lock files (965c844)
+- **package.json:** Add opencollective support link (2fd6e8b)
+
+### ❤️ Contributors
+
+- JamilServices <jamilservicos@gmail.com>
+
 ## v1.0.3
 
 [compare changes](https://create-simplybuilder.github.com/SimplyBuilder/create-simplybuilder/compare/v1.0.2...v1.0.3)
