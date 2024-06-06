@@ -1,4 +1,4 @@
-### create-simplybuilder     
+### [create-simplybuilder](https://github.com/SimplyBuilder/create-simplybuilder)     
 #### Scaffolding to SimplyBuilder Projects     
 
 Scaffold script based on `create-vite`
