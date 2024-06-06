@@ -11,6 +11,10 @@
     {
       "type": "patreon",
       "url": "https://patreon.com/jamilservices"
+    },
+    {
+      "type": "opencollective",
+      "url": "https://opencollective.com/support-jamilservices"
     }
   ],
   "bin": {
