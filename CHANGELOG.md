@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v1.0.5
+
+[compare changes](https://create-simplybuilder.github.com/SimplyBuilder/create-simplybuilder/compare/v1.0.4...v1.0.5)
+
+### 🚀 Enhancements
+
+- Update pnpm version to 9.2.0 in npm-publish workflow (68177ec)
+- **vanilla-spa:** Update main.js to include new imports (60b9404)
+- **scss:** Add initial styles for canvas component (6fc5987)
+- **pageStore:** Add pageStore module for managing page state (1b2de1d)
+- **router:** Add main.js file to configure router in vanilla SPA (1f9bd79)
+- **template:** Add new components for main rendering (d7e193a)
+- **main:** Add green color option for vanilla-spa in project prompt (3a0a87a)
+
+### ❤️ Contributors
+
+- JamilServices <jamilservicos@gmail.com>
+
 ## v1.0.4
 
 [compare changes](https://create-simplybuilder.github.com/SimplyBuilder/create-simplybuilder/compare/v1.0.3...v1.0.4)
