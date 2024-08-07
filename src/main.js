@@ -25,6 +25,11 @@ const TEMPLATES_MODELS = [
                 color: yellow
             },
             {
+                name: "vanilla-landing-page-tailwindcss",
+                display: "Landing Page With Tailwind CSS",
+                color: blue
+            },
+            {
                 name: "vanilla-spa",
                 display: "Single-Page Application",
                 color: green
