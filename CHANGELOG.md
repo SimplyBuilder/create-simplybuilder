@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.0.6
+
+[compare changes](https://create-simplybuilder.github.com/SimplyBuilder/create-simplybuilder/compare/v1.0.5...v1.0.6)
+
+### 🚀 Enhancements
+
+- **template:** Add Landing Page template with Tailwind CSS (bf51605)
+- **template:** Add Landing Page template with Tailwind CSS (9d58ee4)
+
+### ❤️ Contributors
+
+- JamilServices <jamilservicos@gmail.com>
+
 ## v1.0.5
 
 [compare changes](https://create-simplybuilder.github.com/SimplyBuilder/create-simplybuilder/compare/v1.0.4...v1.0.5)
