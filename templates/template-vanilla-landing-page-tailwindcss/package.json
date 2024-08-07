@@ -1,0 +1,23 @@
+{
+  "name": "sb-starter",
+  "version": "0.0.0",
+  "description": "SimplyBuilder - Starter Template with Tailwind",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@jamilservices/sb-core-module": "latest",
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "postcss-nested": "latest",
+    "postcss-import": "latest",
+    "sass": "latest",
+    "vite": "latest",
+    "terser": "latest",
+    "tailwindcss": "latest"
+  }
+}

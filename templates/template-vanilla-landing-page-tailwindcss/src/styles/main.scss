@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  inline-size: 100%;
+  block-size: 100%;
+}
+body {
+  @apply flex flex-col w-full h-full font-serif antialiased text-base p-0 m-0 bg-stone-50 text-stone-800 dark:bg-gray-900 dark:text-gray-200;
+}
+h2, h4 {
+  inline-size: fit-content;
+  @apply font-medium
+}
