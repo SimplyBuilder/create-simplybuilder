@@ -115,7 +115,7 @@ const folderProcess = (data) => {
 };
 //
 const init = async () => {
-    const argTargetDir = formatTargetDir(argv['_[0]']);
+    const argTargetDir = formatTargetDir(argv['project'] || argv.p);
     const argTemplate = argv['template'] || argv.t;
 
     let targetDir = argTargetDir || defaultTargetDir;
